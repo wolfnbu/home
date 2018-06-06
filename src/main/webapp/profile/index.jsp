@@ -179,7 +179,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/flowers.jpg" alt="">
+                                <img src="profile/img/flowers-1.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">my balcony</a></h5>
