@@ -6,7 +6,7 @@
 <html class="no-js">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Allan DENG</title>
+        <title><s:text name="index.profile.title"/></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -26,8 +26,8 @@
                                 <img src="/profile/img/profile.jpg" alt="Volton">
                             </div>
                             <div class="profile-content">
-                                <h3 class="profile-title">Allan DENG</h3>
-                                <p class="/profile-description">Make the world simple!</p>
+                                <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
+                                <p class="/profile-description"><s:text name="index.profile.description"/></p>
                             </div>
                         </div>
                     </div>
@@ -50,8 +50,9 @@
                 <div class="profile-image">
                     <img src="/profile/img/profile.jpg" alt="Volton">
                 </div>
-                <h3 class="profile-title">Allan DENG</h3>
-                <p class="profile-description">Make the world simple!</p>
+                <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
+                <p class="profile-description"><s:text name="index.profile.description"/></p>
+                <p class="profile-description">@Nokia.com</p>
             </div> <!-- top-section -->
             <div class="main-navigation">
                 <ul class="navigation">
@@ -79,9 +80,11 @@
             <div class="banner-overlay"></div>
             <div class="welcome-text">
                 <h2>Allan DENG | Scrum Master</h2>
-                <h5>谦逊 友善 谨慎 冷静 独立 诚信 亲和 忠诚</h5>
+                <h5><s:text name="index.welcome.description"/></h5>
                 <br/>
                 <h5>Let us make this world simple!</h5>
+                <br/>
+                <h5><s:property value="returnMessage"/></h5>
             </div>
         </div>
 
@@ -97,7 +100,10 @@
                             <div class="about-image">
                                 <img src="/profile/img/8.jpg" alt="about me">
                             </div>
-                            <p>To be done</p>
+                            <p>Working in NOKIA</p>
+                            <p>Scrum Master</p>
+                            <p>DevOps Master</p>
+                            <p>Team Leader</p>
                             <hr>
                         </div>
                     </div> <!-- #about -->
@@ -108,7 +114,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">PHOTOS OF WHAT I DO</h4>
-                            <p>to be done</p>
+                            <p>My life, My work</p>
                         </div>
                     </div>
                     <div class="row projects-holder">
@@ -197,12 +203,11 @@
                     <div class="page-section" id="contact">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
-                            <p>talk to me function to be done</p>
+                            <h4 class="widget-title">Leave me message here:</h4>
+                            <!-- <p>talk to me function to be done</p>  -->
                         </div>
                     </div>
                     <div class="row">
-                    <s:property value="returnMessage"/>
                         <form action="/main/sendmessage" method="post" class="contact-form">
                             <fieldset class="col-md-4 col-sm-6">
                                 <input type="text" id="your-name" name="name" placeholder="Your Name...">
