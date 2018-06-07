@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html class="no-js">
@@ -9,11 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="profile/css/normalize.css">
-        <link rel="stylesheet" href="profile/css/font-awesome.css">
-        <link rel="stylesheet" href="profile/css/bootstrap.min.css">
-        <link rel="stylesheet" href="profile/css/templatemo-style.css">
-        <script src="profile/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/profile/css/normalize.css">
+        <link rel="stylesheet" href="/profile/css/font-awesome.css">
+        <link rel="stylesheet" href="/profile/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/profile/css/templatemo-style.css">
+        <script src="/profile/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <div class="responsive-header visible-xs visible-sm">
@@ -22,11 +23,11 @@
                     <div class="col-md-12">
                         <div class="top-section">
                             <div class="profile-image">
-                                <img src="profile/img/profile.jpg" alt="Volton">
+                                <img src="/profile/img/profile.jpg" alt="Volton">
                             </div>
                             <div class="profile-content">
                                 <h3 class="profile-title">Allan DENG</h3>
-                                <p class="profile-description">Make the world simple!</p>
+                                <p class="/profile-description">Make the world simple!</p>
                             </div>
                         </div>
                     </div>
@@ -47,7 +48,7 @@
         <div class="sidebar-menu hidden-xs hidden-sm">
             <div class="top-section">
                 <div class="profile-image">
-                    <img src="profile/img/profile.jpg" alt="Volton">
+                    <img src="/profile/img/profile.jpg" alt="Volton">
                 </div>
                 <h3 class="profile-title">Allan DENG</h3>
                 <p class="profile-description">Make the world simple!</p>
@@ -94,7 +95,7 @@
                         <div class="col-md-12">
                             <h4 class="widget-title">Learn About Me</h4>
                             <div class="about-image">
-                                <img src="profile/img/8.jpg" alt="about me">
+                                <img src="/profile/img/8.jpg" alt="about me">
                             </div>
                             <p>To be done</p>
                             <hr>
@@ -113,7 +114,7 @@
                     <div class="row projects-holder">
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/1.jpg" alt="">
+                                <img src="/profile/img/1.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -124,7 +125,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/2.jpg" alt="">
+                                <img src="/profile/img/2.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -135,7 +136,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/3.jpg" alt="">
+                                <img src="/profile/img/3.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -146,7 +147,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/4.jpg" alt="">
+                                <img src="/profile/img/4.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -157,7 +158,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/5.jpg" alt="">
+                                <img src="/profile/img/5.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -168,7 +169,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/6.jpg" alt="">
+                                <img src="/profile/img/6.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">text</a></h5>
@@ -179,7 +180,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="profile/img/flowers-1.jpg" alt="">
+                                <img src="/profile/img/flowers-1.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
                                         <h5><a href="#">my balcony</a></h5>
@@ -201,15 +202,16 @@
                         </div>
                     </div>
                     <div class="row">
+                    <s:property value="returnMessage"/>
                         <form action="/main/sendmessage" method="post" class="contact-form">
                             <fieldset class="col-md-4 col-sm-6">
-                                <input type="text" id="your-name" placeholder="Your Name...">
+                                <input type="text" id="your-name" name="name" placeholder="Your Name...">
                             </fieldset>
                             <fieldset class="col-md-4 col-sm-6">
-                                <input type="email" id="email" placeholder="Your Email...">
+                                <input type="email" id="email" name="email" placeholder="Your Email...">
                             </fieldset>
                             <fieldset class="col-md-4 col-sm-12">
-                                <input type="text" id="your-subject" placeholder="Subject...">
+                                <input type="text" id="your-subject" name="subject" placeholder="Subject...">
                             </fieldset>
                             <fieldset class="col-md-12 col-sm-12">
                                 <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
@@ -230,8 +232,8 @@
                 </div>
             </div>
         </div>
-        <script src="profile/js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="profile/js/min/plugins.min.js"></script>
-        <script src="profile/js/min/main.min.js"></script>
+        <script src="/profile/js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="/profile/js/min/plugins.min.js"></script>
+        <script src="/profile/js/min/main.min.js"></script>
     </body>
 </html>

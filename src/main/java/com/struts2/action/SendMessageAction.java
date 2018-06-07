@@ -9,6 +9,7 @@ public class SendMessageAction implements Action{
 	private String email;
 	private String subject;
 	private String message;
+	private String returnMessage;
 	
 	public String execute() throws Exception {
 		
@@ -18,8 +19,24 @@ public class SendMessageAction implements Action{
 		System.out.println("subject : " + getSubject());
 		System.out.println("message : "+ getMessage());
 		System.out.println("this is just test message-------------------------------");
+
+		setReturnMessage("Got your message, thanks.");
 		
 		return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
+	}
+
+	/**
+	 * @return the returnMessage
+	 */
+	public String getReturnMessage() {
+		return returnMessage;
+	}
+
+	/**
+	 * @param returnMessage the returnMessage to set
+	 */
+	public void setReturnMessage(String returnMessage) {
+		this.returnMessage = returnMessage;
 	}
 
 	/**
