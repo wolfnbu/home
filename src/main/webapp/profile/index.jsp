@@ -201,7 +201,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form action="#" method="post" class="contact-form">
+                        <form action="/main/sendmessage.action2" method="post" class="contact-form">
                             <fieldset class="col-md-4 col-sm-6">
                                 <input type="text" id="your-name" placeholder="Your Name...">
                             </fieldset>
