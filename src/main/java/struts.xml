@@ -5,9 +5,9 @@
 <struts>
   <package name="mainpage" namespace="/main" extends="struts-default">   
     <action name="sendmessage" class="com.struts2.action.SendMessageAction">   
-      <result name="success">profile/index.jsp</result>
-      <result name="error">profile/index.jsp</result>
-    </action>   
+      <result name="success">/profile/index.jsp</result>
+      <result name="error">/profile/index.jsp</result>
+    </action>
   </package>
   <!-- Add packages here -->
 </struts>
