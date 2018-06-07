@@ -35,10 +35,10 @@
                 <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                 <div class="main-navigation responsive-menu">
                     <ul class="navigation">
-                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                        <li><a href="#top"><i class="fa fa-home"></i><s:text name="index.sidebar.welcome"/></a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i><s:text name="index.sidebar.aboutme"/></a></li>
+                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i><s:text name="index.sidebar.mygallery"/></a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i><s:text name="index.sidebar.contactme"/></a></li>
                     </ul>
                 </div>
             </div>
@@ -52,14 +52,14 @@
                 </div>
                 <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
                 <p class="profile-description"><s:text name="index.profile.description"/></p>
-                <p class="profile-description">@Nokia.com</p>
+                <p class="profile-description"><s:text name="index.profile.company"/></p>
             </div> <!-- top-section -->
             <div class="main-navigation">
                 <ul class="navigation">
-                    <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
-                    <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
-                    <li><a href="#projects"><i class="fa fa-paperclip"></i>My Gallery</a></li>
-                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
+                    <li><a href="#top"><i class="fa fa-globe"></i><s:text name="index.sidebar.welcome"/></a></li>
+                    <li><a href="#about"><i class="fa fa-pencil"></i><s:text name="index.sidebar.aboutme"/></a></li>
+                    <li><a href="#projects"><i class="fa fa-paperclip"></i><s:text name="index.sidebar.mygallery"/></a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i><s:text name="index.sidebar.contactme"/></a></li>
                 </ul>
             </div> <!-- .main-navigation -->
             <div class="social-icons">
@@ -74,15 +74,15 @@
             </div> <!-- .social-icons -->
         </div> <!-- .sidebar-menu -->
         
-		<div class="copyrights">from <a href="www.dengjl.com" >dengjl.com</a></div>
+		<div class="copyrights">from <a href="www.dengjl.com" ><s:text name="index.url"/></a></div>
         	
         <div class="banner-bg" id="top">
             <div class="banner-overlay"></div>
             <div class="welcome-text">
                 <h2><s:text name="index.welcome.name"/></h2>
-                <h5><s:text name="index.welcome.description"/></h5>
+                <h5><s:text name="index.welcome.signiture"/></h5>
                 <br/>
-                <h5>Let us make this world simple!</h5>
+                <h5><s:text name="index.welcome.description"/></h5>
                 <br/>
                 <h5><s:property value="returnMessage"/></h5>
             </div>
@@ -96,7 +96,7 @@
                     <div class="page-section" id="about">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="widget-title">Learn About Me</h4>
+                            <h4 class="widget-title"><s:text name="index.content.aboutme"/></h4>
                             <div class="about-image">
                                 <img src="/profile/img/8.jpg" alt="about me">
                             </div>
@@ -113,7 +113,7 @@
                     <div class="page-section" id="projects">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="widget-title">PHOTOS OF WHAT I DO</h4>
+                            <h4 class="widget-title"><s:text name="index.content.mygallery"/></h4>
                             <p>My life, My work</p>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                     <div class="page-section" id="contact">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="widget-title">Leave me message here:</h4>
+                            <h4 class="widget-title"><s:text name="index.content.message"/></h4>
                             <!-- <p>talk to me function to be done</p>  -->
                         </div>
                     </div>
@@ -231,7 +231,7 @@
 
                     <div class="row" id="footer">
                         <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright &copy; 2018 Allan DENG - <a href="http://www.dengjl.com">www.dengjl.com</a></p>
+                            <p class="copyright-text">Copyright &copy; 2018 Allan DENG - <a href="http://www.dengjl.com"><s:text name="index.url"/></a></p>
                         </div>
                     </div>
                 </div>
