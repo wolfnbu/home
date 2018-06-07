@@ -4,7 +4,7 @@
   "http://struts.apache.org/dtds/struts-2.0.dtd" >   
 <struts>
   <package name="mainpage" namespace="/main" extends="struts-default">   
-    <action name="sendmessage" class="com.struts2.action.SendMessage">   
+    <action name="sendmessage" class="com.struts2.action.SendMessageAction">   
       <result name="success">profile/index.jsp</result>
       <result name="error">profile/index.jsp</result>
     </action>   
