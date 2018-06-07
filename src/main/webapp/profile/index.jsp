@@ -27,7 +27,7 @@
                             </div>
                             <div class="profile-content">
                                 <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
-                                <p class="/profile-description"><s:text name="index.profile.description"/></p>
+                                <p class="profile-description"><s:text name="index.profile.description"/></p>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
         <div class="banner-bg" id="top">
             <div class="banner-overlay"></div>
             <div class="welcome-text">
-                <h2>Allan DENG | Scrum Master</h2>
+                <h2><s:text name="index.welcome.name"/></h2>
                 <h5><s:text name="index.welcome.description"/></h5>
                 <br/>
                 <h5>Let us make this world simple!</h5>
