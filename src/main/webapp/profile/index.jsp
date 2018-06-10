@@ -120,66 +120,33 @@
                     <div class="row projects-holder">
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="/profile/img/1.jpg" alt="">
+                                <img src="/profile/img/DevOps_Master.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
+                                        <h5><a href="#">DevOps Master</a></h5>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="/profile/img/2.jpg" alt="">
+                                <img src="/profile/img/PMP.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
+                                        <h5><a href="#">PMP</a></h5>
+                                        <p>Project Management Professional</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="/profile/img/3.jpg" alt="">
+                                <img src="/profile/img/Scrum_Master.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/4.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/5.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/6.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">text</a></h5>
-                                        <p>text</p>
+                                        <h5><a href="#">Scrum Master</a></h5>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
