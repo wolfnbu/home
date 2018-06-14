@@ -13,6 +13,11 @@ import javax.mail.internet.MimeMessage;
 
 import com.exception.NoPropertiesException;
 
+/**
+ * Email Utility
+ * @author allandeng
+ *
+ */
 public class MailUtil {
 
 	/**
@@ -46,7 +51,7 @@ public class MailUtil {
 			// need authentication
 			props.setProperty("mail.smtp.auth", "true");
 			props.setProperty("mail.smtp.timeout","1000");
-			
+
 			//set authentication
 			final String userName = PropertiesUtil.getProperties(PropertiesUtil.MAIL_SEND_USER_NAME);
 			final String passwd = PropertiesUtil.getProperties(PropertiesUtil.MAIL_SEND_PASSWD);

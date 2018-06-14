@@ -4,6 +4,11 @@ import com.common.MailUtil;
 import com.common.StringCommonUtil;
 import com.opensymphony.xwork2.Action;
 
+/**
+ * Send email function
+ * @author allandeng
+ *
+ */
 public class SendMessageAction implements Action{
 
 	private String name;
@@ -12,6 +17,9 @@ public class SendMessageAction implements Action{
 	private String message;
 	private String returnMessage;
 	
+	/**
+	 * 
+	 */
 	public String execute() throws Exception {
 		String name = getName();
 		String email = getEmail();
