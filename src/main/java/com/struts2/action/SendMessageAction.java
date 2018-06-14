@@ -19,6 +19,11 @@ public class SendMessageAction implements Action{
 		String message = getMessage();
 		if (name == null || "".equals(name)) {
 			setReturnMessage("Please at least tell me who you are, and send again.");
+			return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
+		}
+		if (message == null || "".equals(message)) {
+			setReturnMessage("What you want to say to me?");
+			return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
 		}
 		MailUtil.sendEmailToAllan(subject, message);
 		
