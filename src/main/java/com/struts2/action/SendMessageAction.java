@@ -48,7 +48,7 @@ public class SendMessageAction implements Action{
 		        .append(name + "<br/><br/>")
 		        .append("<span class=\"test\">His/her email is:</span><br/>")
 		        .append(email + "<br/><br/>")
-		        .append("<span class=\"test\">His/her email is:</span><br/>")
+		        .append("<span class=\"test\">Below is the message:</span><br/>")
 		        .append(message + "<br/><br/>")
 		        .append("</body>")
 		        .append("</html>");
