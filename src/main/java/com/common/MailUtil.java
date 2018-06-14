@@ -41,13 +41,6 @@ public class MailUtil {
 		try {
 			//create Session
 			Properties props = new Properties();
-			
-			File directory = new File("");//设定为当前文件夹 
-			try{ 
-			    System.out.println(directory.getCanonicalPath());//获取标准的路径 
-			    System.out.println(directory.getAbsolutePath());//获取绝对路径 
-			}catch(Exception e){} 
-			
 			props.setProperty("mail.transport.protocol", PropertiesUtil.getProperties(PropertiesUtil.MAIL_TRANSPORT_PROTOCOL));
 			props.setProperty("mail.smtp.host", PropertiesUtil.getProperties(PropertiesUtil.MAIL_SMTP_HOST));
 			props.setProperty("mail.smtp.port", PropertiesUtil.getProperties(PropertiesUtil.MAIL_SMTP_PORT));

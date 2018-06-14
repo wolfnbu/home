@@ -1,8 +1,8 @@
 package com.common;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import com.exception.NoPropertiesException;
@@ -41,13 +41,14 @@ public class PropertiesUtil {
 	@SuppressWarnings("finally")
 	public static String getProperties(String key) throws NoPropertiesException{
 		String value = null;
-		FileInputStream propertiesFile = null;
+		InputStream propertiesFile = null;
 		try {
 			if (key == null || "".equals(key)) {
 				throw new NoPropertiesException("Key can't be empty.");
 			}
 			Properties pps = new Properties();
-			propertiesFile = new FileInputStream(MAIN_PROPERTIES_PATH);
+			propertiesFile = PropertiesUtil.class.getResourceAsStream("/conf.properties");
+			//propertiesFile = new FileInputStream(MAIN_PROPERTIES_PATH);
 			pps.load(propertiesFile);
 			value = pps.getProperty(key);
 			if (value == null) {
