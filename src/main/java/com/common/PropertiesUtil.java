@@ -12,11 +12,11 @@ public class PropertiesUtil {
 	public static String TEST_KEY = "test.key";
 	
 	//main properties
-	public static String MAIN_PROPERTIES_PATH = "/src/main/resources/conf.properties";
+	public static String MAIN_PROPERTIES_PATH = "src/main/resources/conf.properties";
 	
 	//mail sender user name
 	public static String MAIL_SEND_USER_NAME = "mail.163.username";
-	
+
 	//mail sender passwd
 	public static String MAIL_SEND_PASSWD = "mail.163.passwd";
 	
