@@ -21,18 +21,7 @@ public class SendMessageAction implements Action{
 		if (subject == null || "".equals(subject)) {
 			subject = "there is no subject";
 		}
-		
-//		StringBuffer emailMsg = new StringBuffer();
-//		emailMsg.append("this is message from " + name + "\n");
-//		if (email == null || "".equals(email)) {
-//			emailMsg.append("    his/her email is - no email left.\n");
-//		} else {
-//			emailMsg.append("    his/her email is " + email + "\n");
-//		}
-//		emailMsg.append("Here is the message:\n");
-//		emailMsg.append(message);
-		
-		
+
         StringBuffer emailMsg = new StringBuffer();  
         emailMsg.append("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">")
 		        .append("<html>")
@@ -40,7 +29,7 @@ public class SendMessageAction implements Action{
 		        .append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">")
 		        .append("<title>Message from " + name +"</title>")
 		        .append("<style type=\"text/css\">")
-		        .append(".test{font-family:\"Microsoft Yahei\";font-size: 15px;color: blue;}")
+		        .append(".test{font-family:\"Microsoft Yahei\";text-decoration:underline;font-size:15px;color:blue;}")
 		        .append("</style>")
 		        .append("</head>")
 		        .append("<body>")
