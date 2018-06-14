@@ -25,8 +25,13 @@ public class SendMessageAction implements Action{
 			setReturnMessage("What you want to say to me?");
 			return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
 		}
-		MailUtil.sendEmailToAllan(subject, message);
-		
+		try {
+			MailUtil.sendEmailToAllan(subject, message);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return StringCommonUtil.STRUTS2_RETURN_ERROR;
+		}
+
 		System.out.println("this is just test message-------------------------------");
 		System.out.println("name : " + getName());
 		System.out.println("email : " + getEmail());
