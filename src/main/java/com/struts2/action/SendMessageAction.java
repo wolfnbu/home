@@ -1,5 +1,6 @@
 package com.struts2.action;
 
+import com.common.MailUtil;
 import com.common.StringCommonUtil;
 import com.opensymphony.xwork2.Action;
 
@@ -12,6 +13,14 @@ public class SendMessageAction implements Action{
 	private String returnMessage;
 	
 	public String execute() throws Exception {
+		String name = getName();
+		String email = getEmail();
+		String subject = getSubject();
+		String message = getMessage();
+		if (name == null || "".equals(name)) {
+			setReturnMessage("Please at least tell me who you are, and send again.");
+		}
+		MailUtil.sendEmailToAllan(subject, message);
 		
 		System.out.println("this is just test message-------------------------------");
 		System.out.println("name : " + getName());

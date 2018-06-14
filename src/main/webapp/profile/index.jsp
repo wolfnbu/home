@@ -16,6 +16,11 @@
         <link rel="stylesheet" href="/profile/css/templatemo-style.css">
         <script src="/profile/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
+
+    <script type="text/javascript">
+    
+	</script>
+
     <body>
         <div class="responsive-header visible-xs visible-sm">
             <div class="container">
