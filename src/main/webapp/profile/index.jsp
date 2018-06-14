@@ -176,7 +176,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title"><s:text name="index.content.message"/></h4>
-                            <!-- <p>talk to me function to be done</p>  -->
+                            <p><s:text name="index.content.message.warning"/></p>
                         </div>
                     </div>
                     <div class="row">
