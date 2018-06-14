@@ -1,6 +1,5 @@
 package com.common;
 
-import java.io.File;
 import java.util.Properties;
 
 import javax.mail.Authenticator;

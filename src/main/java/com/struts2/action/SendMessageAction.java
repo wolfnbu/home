@@ -22,15 +22,32 @@ public class SendMessageAction implements Action{
 			subject = "there is no subject";
 		}
 		
-		StringBuffer emailMsg = new StringBuffer();
-		emailMsg.append("this is message from " + name + "\n");
-		if (email == null || "".equals(email)) {
-			emailMsg.append("    his/her email is - no email left.\n");
-		} else {
-			emailMsg.append("    his/her email is " + email + "\n");
-		}
-		emailMsg.append("Here is the message:\n");
-		emailMsg.append(message);
+//		StringBuffer emailMsg = new StringBuffer();
+//		emailMsg.append("this is message from " + name + "\n");
+//		if (email == null || "".equals(email)) {
+//			emailMsg.append("    his/her email is - no email left.\n");
+//		} else {
+//			emailMsg.append("    his/her email is " + email + "\n");
+//		}
+//		emailMsg.append("Here is the message:\n");
+//		emailMsg.append(message);
+		
+		
+        StringBuffer emailMsg = new StringBuffer();  
+        emailMsg.append("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">")
+		        .append("<html>")
+		        .append("<head>")
+		        .append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">")
+		        .append("<title>Message from " + name +"</title>")
+		        .append("<style type=\"text/css\">")
+		        .append(".test{font-family:\"Microsoft Yahei\";font-size: 18px;color: red;}")
+		        .append("</style>")
+		        .append("</head>")
+		        .append("<body>")
+		        .append("his/her email is " + email + "<br/>")
+		        .append("<span class=\"test\">Here is the message<br/> " + message + "</span>")
+		        .append("</body>")
+		        .append("</html>");
 
 		if (name == null || "".equals(name)) {
 			setReturnMessage("Please at least tell me who you are, and send again.");
