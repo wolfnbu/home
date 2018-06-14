@@ -12,7 +12,7 @@ public class PropertiesUtil {
 	public static String TEST_KEY = "test.key";
 	
 	//main properties
-	public static String MAIN_PROPERTIES_PATH = "src/main/resources/conf.properties";
+	public static String MAIN_PROPERTIES = "/conf.properties";
 	
 	//mail sender user name
 	public static String MAIL_SEND_USER_NAME = "mail.163.username";
@@ -47,7 +47,7 @@ public class PropertiesUtil {
 				throw new NoPropertiesException("Key can't be empty.");
 			}
 			Properties pps = new Properties();
-			propertiesFile = PropertiesUtil.class.getResourceAsStream("/conf.properties");
+			propertiesFile = PropertiesUtil.class.getResourceAsStream(MAIN_PROPERTIES);
 			//propertiesFile = new FileInputStream(MAIN_PROPERTIES_PATH);
 			pps.load(propertiesFile);
 			value = pps.getProperty(key);

@@ -17,6 +17,21 @@ public class SendMessageAction implements Action{
 		String email = getEmail();
 		String subject = getSubject();
 		String message = getMessage();
+		
+		if (subject == null || "".equals(subject)) {
+			subject = "there is no subject";
+		}
+		
+		StringBuffer emailMsg = new StringBuffer();
+		emailMsg.append("this is message from " + name + "\n");
+		if (email == null || "".equals(email)) {
+			emailMsg.append("    his/her email is - no email left.\n");
+		} else {
+			emailMsg.append("    his/her email is " + email + "\n");
+		}
+		emailMsg.append("Here is the message:\n");
+		emailMsg.append(message);
+
 		if (name == null || "".equals(name)) {
 			setReturnMessage("Please at least tell me who you are, and send again.");
 			return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
@@ -26,7 +41,7 @@ public class SendMessageAction implements Action{
 			return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
 		}
 		try {
-			MailUtil.sendEmailToAllan(subject, message);
+			MailUtil.sendEmailToAllan(subject, emailMsg.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 			return StringCommonUtil.STRUTS2_RETURN_ERROR;
@@ -40,7 +55,6 @@ public class SendMessageAction implements Action{
 		System.out.println("this is just test message-------------------------------");
 
 		setReturnMessage("Got your message, thanks.");
-		
 		return StringCommonUtil.STRUTS2_RETURN_SUCCESS;
 	}
 
