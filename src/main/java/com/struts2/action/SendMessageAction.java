@@ -40,12 +40,12 @@ public class SendMessageAction implements Action{
 		        .append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">")
 		        .append("<title>Message from " + name +"</title>")
 		        .append("<style type=\"text/css\">")
-		        .append(".test{font-family:\"Microsoft Yahei\";font-size: 18px;color: red;}")
+		        .append(".test{font-family:\"Microsoft Yahei\";font-size: 18px;color: blue;}")
 		        .append("</style>")
 		        .append("</head>")
 		        .append("<body>")
-		        .append("his/her email is " + email + "<br/>")
-		        .append("<span class=\"test\">Here is the message<br/> " + message + "</span>")
+		        .append("<span class=\"test\">Message from " + name + "</span><br/>")
+		        .append("His/her email is " + email + "<br/><br/>Here is the message:<br/> " + message + "</span>")
 		        .append("</body>")
 		        .append("</html>");
 
