@@ -106,7 +106,7 @@
                                 <img src="/profile/img/8.jpg" alt="about me">
                             </div>
                             <p>Working in NOKIA</p>
-                            <p>Scrum Master</p>
+                            <p>Scrum Master for 5 years</p>
                             <p>DevOps Master</p>
                             <p>Team Leader</p>
                             <hr>
