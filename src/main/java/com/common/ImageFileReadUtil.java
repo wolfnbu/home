@@ -17,12 +17,12 @@ public class ImageFileReadUtil {
 	}
 	
 	@SuppressWarnings("finally")
-	public static List<String> getBroadCastImageFiles() {
+	public static List<String> getBroadCastImageFiles(String realPath) {
 		List<String> imageFilesMap = new ArrayList<String>();
 		try {
 			String imagePath  = PropertiesUtil.getProperties(PropertiesUtil.PATH_BROADCAST_IMAGE);
 			System.out.println("imagePath: " + imagePath);
-			File fileImagePath = new File(imagePath);
+			File fileImagePath = new File(realPath + imagePath);
 			if (!fileImagePath.isDirectory()) {
 				throw new Exception("Configured image path is not exists!");
 			}
