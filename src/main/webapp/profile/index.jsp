@@ -53,7 +53,7 @@
         <div class="sidebar-menu hidden-xs hidden-sm">
             <div class="top-section">
                 <div class="profile-image">
-                    <img src="/profile/img/profile.jpg" alt="Volton">
+                    <img src="/profile/img/honda.jpg" alt="Volton">
                 </div>
                 <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
                 <p class="profile-description"><s:text name="index.profile.description"/></p>
