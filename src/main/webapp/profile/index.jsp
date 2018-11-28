@@ -28,7 +28,7 @@
                     <div class="col-md-12">
                         <div class="top-section">
                             <div class="profile-image">
-                                <img src="/profile/img/profile.jpg" alt="Volton">
+                                <img src="/profile/img/honda.jpg" alt="Volton">
                             </div>
                             <div class="profile-content">
                                 <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
