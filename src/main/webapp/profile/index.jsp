@@ -1,3 +1,5 @@
+<%@page import="com.common.ImageFileReadUtil"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -106,7 +108,7 @@
                                 <img src="/profile/img/8.jpg" alt="about me">
                             </div>
                             <p>Working in NOKIA</p>
-                            <p>Scrum Master for 5 years</p>
+                            <p>Scrum Master</p>
                             <p>DevOps Master</p>
                             <p>Team Leader</p>
                             <hr>
@@ -123,6 +125,10 @@
                         </div>
                     </div>
                     <div class="row projects-holder">
+<%List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(); %>
+<s:iterator value="fileList" status="path">
+	<s:property value="path"/>
+</s:iterator>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
                                 <img src="/profile/img/DevOps_Master.jpeg" alt="">

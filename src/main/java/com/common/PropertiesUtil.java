@@ -31,6 +31,9 @@ public class PropertiesUtil {
 	
 	//allan email address
 	public static String ALLAN_EMAIL_ADDRESS = "mail.allandengjl.address";
+	
+	//broadcast image folder
+	public static String PATH_BROADCAST_IMAGE = "path.broadcast.image";
 
 	/**
 	 * Get value from property 
