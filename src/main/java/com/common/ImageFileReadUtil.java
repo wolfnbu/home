@@ -31,7 +31,7 @@ public class ImageFileReadUtil {
 				String fileName = imageFile.getName();
 				String filePath = imageFile.getPath();
 				System.out.println(fileName + " : " + filePath);
-				imageFilesMap.add(filePath);
+				imageFilesMap.add(imagePath + fileName);
 			}
 		} catch (Exception e) {
 			System.out.println("Error when read broadcast images");
