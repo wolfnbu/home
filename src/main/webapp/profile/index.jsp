@@ -124,12 +124,16 @@
                         </div>
                     </div>
                     <div class="row projects-holder">
+
 <%
-List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(); 
+
 String path = request.getContextPath();
 String servletPath = request.getServletPath();
+String realPath = request.getRealPath("/");
 System.out.println("path: " + path);
 System.out.println("servletPath: " + servletPath);
+System.out.println("realPath: " + realPath);
+List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(realPath); 
 %>
 <s:iterator value="fileList" status="path">
 	<s:property value="path"/>
