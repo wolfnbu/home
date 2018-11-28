@@ -12,16 +12,18 @@ import java.util.List;
 public class ImageFileReadUtil {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
- 
 	}
 	
+	/**
+	 * read brocadcast images
+	 * @param realPath
+	 * @return
+	 */
 	@SuppressWarnings("finally")
 	public static List<String> getBroadCastImageFiles(String realPath) {
 		List<String> imageFilesMap = new ArrayList<String>();
 		try {
 			String imagePath  = PropertiesUtil.getProperties(PropertiesUtil.PATH_BROADCAST_IMAGE);
-			System.out.println("imagePath: " + imagePath);
 			File fileImagePath = new File(realPath + imagePath);
 			if (!fileImagePath.isDirectory()) {
 				throw new Exception("Configured image path is not exists!");
@@ -29,8 +31,6 @@ public class ImageFileReadUtil {
 			File[] imageFiles = fileImagePath.listFiles();
 			for (File imageFile:imageFiles) {
 				String fileName = imageFile.getName();
-				String filePath = imageFile.getPath();
-				System.out.println(fileName + " : " + filePath);
 				imageFilesMap.add(imagePath + fileName);
 			}
 		} catch (Exception e) {

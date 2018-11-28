@@ -127,66 +127,22 @@
 
 <%
 String realPath = request.getRealPath("");
-System.out.println("realPath: "+realPath);
-List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(realPath); 
+List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(realPath);
+request.setAttribute("fileList", fileList);
 %>
-<s:iterator value="fileList" status="path">
-	<div class="col-md-4 col-sm-6">
-	    <div class="project-item">
-	        <img src="<s:property value="path"/>" alt="">
-	        <div class="project-hover">
-	            <div class="inside">
-	                <h5><a href="#">Honda</a></h5>
-	                <p></p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+<s:iterator value='#request.fileList' var="path">
+						<div class="col-md-4 col-sm-6">
+						    <div class="project-item">
+						        <img src="<s:property value="path"/>" alt="">
+						        <div class="project-hover">
+						            <div class="inside">
+						                <h5><a href="#">Honda</a></h5>
+						                <p></p>
+						            </div>
+						        </div>
+						    </div>
+						</div>
 </s:iterator>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/DevOps_Master.jpeg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">ssss DevOps Master</a></h5>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/PMP.jpeg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">PMP</a></h5>
-                                        <p>Project Management Professional</p>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/Scrum_Master.jpeg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">Scrum Master</a></h5>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="/profile/img/flowers-1.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">my balcony</a></h5>
-                                        <p>this is what I like to do.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div> <!-- .projects-holder -->
                     </div>
                     <hr>
