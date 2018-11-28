@@ -142,7 +142,7 @@ request.setAttribute("fileList", fileList);
 						        </div>
 						    </div>
 						</div>
-</s:iterator> 
+</s:iterator>
                     </div> <!-- .projects-holder -->
                     </div>
                     <hr>
