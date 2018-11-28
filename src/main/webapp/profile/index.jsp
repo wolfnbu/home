@@ -124,7 +124,13 @@
                         </div>
                     </div>
                     <div class="row projects-holder">
-<%List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(); %>
+<%
+List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(); 
+String path = request.getContextPath();
+String servletPath = request.getServletPath();
+System.out.println("path: " + path);
+System.out.println("servletPath: " + servletPath);
+%>
 <s:iterator value="fileList" status="path">
 	<s:property value="path"/>
 </s:iterator>
@@ -133,7 +139,7 @@
                                 <img src="/profile/img/DevOps_Master.jpeg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">DevOps Master</a></h5>
+                                        <h5><a href="#">ssss DevOps Master</a></h5>
                                         <p></p>
                                     </div>
                                 </div>
