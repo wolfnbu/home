@@ -1,5 +1,6 @@
 <%@page import="com.common.ImageFileReadUtil"%>
 <%@page import="java.util.List"%>
+<%@page import="com.bean.BroadcastImage"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -124,20 +125,19 @@
                         </div>
                     </div>
                     <div class="row projects-holder">
-
 <%
 String realPath = request.getRealPath("");
-List<String> fileList = ImageFileReadUtil.getBroadCastImageFiles(realPath);
+List<BroadcastImage> fileList = ImageFileReadUtil.getBroadCastImageFiles(realPath);
 request.setAttribute("fileList", fileList);
 %>
-<s:iterator value='#request.fileList' var="path">
+<s:iterator value='#request.fileList' var="image">
 						<div class="col-md-4 col-sm-6">
 						    <div class="project-item">
-						        <img src="<s:property value="path"/>" alt="">
+						        <img src="<s:property value="#image.filePath"/>" alt="">
 						        <div class="project-hover">
 						            <div class="inside">
-						                <h5><a href="#">Honda</a></h5>
-						                <p></p>
+						                <h5><a href="#"></a></h5>
+						                <p><s:property value="#image.alt"/></p>
 						            </div>
 						        </div>
 						    </div>

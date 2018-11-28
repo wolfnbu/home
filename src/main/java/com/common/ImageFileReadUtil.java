@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bean.BroadcastImage;
+
 /**
  * this is for read image automaticly
  * @author allandeng
@@ -20,8 +22,8 @@ public class ImageFileReadUtil {
 	 * @return
 	 */
 	@SuppressWarnings("finally")
-	public static List<String> getBroadCastImageFiles(String realPath) {
-		List<String> imageFilesMap = new ArrayList<String>();
+	public static List<BroadcastImage> getBroadCastImageFiles(String realPath) {
+		List<BroadcastImage> imageFilesList = new ArrayList<BroadcastImage>();
 		try {
 			String imagePath  = PropertiesUtil.getProperties(PropertiesUtil.PATH_BROADCAST_IMAGE);
 			File fileImagePath = new File(realPath + imagePath);
@@ -31,13 +33,17 @@ public class ImageFileReadUtil {
 			File[] imageFiles = fileImagePath.listFiles();
 			for (File imageFile:imageFiles) {
 				String fileName = imageFile.getName();
-				imageFilesMap.add(imagePath + fileName);
+				String filePathName = imagePath + fileName;
+				BroadcastImage image= new BroadcastImage();
+				image.setAlt(fileName);
+				image.setFilePath(filePathName);
+				imageFilesList.add(image);
 			}
 		} catch (Exception e) {
 			System.out.println("Error when read broadcast images");
 			e.printStackTrace();
 		} finally {
-			return imageFilesMap;
+			return imageFilesList;
 		}
 	}
 }
