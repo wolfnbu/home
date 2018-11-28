@@ -21,6 +21,7 @@ public class ImageFileReadUtil {
 		List<String> imageFilesMap = new ArrayList<String>();
 		try {
 			String imagePath  = PropertiesUtil.getProperties(PropertiesUtil.PATH_BROADCAST_IMAGE);
+			System.out.println("imagePath: " + imagePath);
 			File fileImagePath = new File(imagePath);
 			if (!fileImagePath.isDirectory()) {
 				throw new Exception("Configured image path is not exists!");
