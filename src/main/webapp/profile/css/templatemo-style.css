@@ -420,7 +420,7 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 260px 80px;
+  padding: 80px 80px;
   position: relative;
   background: url("../img/phone_narrow.jpg");
   background-repeat: no-repeat;
@@ -433,7 +433,7 @@ h3.profile-title {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(95, 109, 126, 0.4);
+  background: rgba(95, 109, 126, 0.5);
   top: 0;
   left: 0;
   z-index: 3;

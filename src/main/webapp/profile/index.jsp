@@ -58,8 +58,8 @@
                     <img src="/profile/img/honda.jpg" alt="Volton">
                 </div>
                 <h3 class="profile-title"><s:text name="index.profile.title"/></h3>
-                <p class="profile-description"><s:text name="index.profile.description"/></p>
-                <p class="profile-description"><s:text name="index.profile.company"/></p>
+                <p class="profile-description">&nbsp;&nbsp;&nbsp;&nbsp;<s:text name="index.profile.description"/></p>
+                <p class="profile-description">&nbsp;&nbsp;&nbsp;&nbsp;<s:text name="index.profile.company"/></p>
             </div> <!-- top-section -->
             <div class="main-navigation">
                 <ul class="navigation">
@@ -80,9 +80,9 @@
                 </ul>
             </div> <!-- .social-icons -->
         </div> <!-- .sidebar-menu -->
-        
+
 		<div class="copyrights">from <a href="www.dengjl.com" ><s:text name="index.url"/></a></div>
-        	
+
         <div class="banner-bg" id="top">
             <div class="banner-overlay"></div>
             <div class="welcome-text">
@@ -110,6 +110,7 @@
                             <p>Working in NOKIA</p>
                             <p>Scrum Master</p>
                             <p>DevOps Master</p>
+                            <p>Project Management Professional</p>
                             <p>Team Leader</p>
                             <hr>
                         </div>
