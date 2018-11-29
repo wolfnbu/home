@@ -105,7 +105,7 @@
                         <div class="col-md-12">
                             <h4 class="widget-title"><s:text name="index.content.aboutme"/></h4>
                             <div class="about-image">
-                                <img src="/profile/img/8.jpg" alt="about me">
+                                <img src="/profile/img/certs.jpg" alt="about me">
                             </div>
                             <p>Working in NOKIA</p>
                             <p>Scrum Master</p>
