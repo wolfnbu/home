@@ -114,7 +114,7 @@
                             <hr>
                         </div>
                     </div> <!-- #about -->
-                    </div>
+                    </div> 
                     
                     <!-- PROJECTS -->
                     <div class="page-section" id="projects">
